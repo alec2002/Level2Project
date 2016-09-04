@@ -22,12 +22,14 @@ public class TreasureHunt {
 	}
 
 	public void update() {
-		if (InputManager.GetMouseX() > 200 & InputManager.GetMouseX() < 210 && InputManager.GetMouseY() > 285
-				&& InputManager.GetMouseY() > 295 & InputManager.GetMouseY() < 335) {
+		System.out.println(InputManager.GetMouseY());
+		if (InputManager.GetMouseX() > 200 && InputManager.GetMouseX() < 205 && InputManager.GetMouseY() > 285
+				&& InputManager.GetMouseY() < 290) {
 			JOptionPane.showMessageDialog(null, "Good Job, Now find thy docking device on here map");
 			playSound("waves.wav");
 
 		}
+		// GET REALMOUSEX ANDD MOUSEY
 		if (InputManager.GetMouseX() > 375 & InputManager.GetMouseX() < 390 && InputManager.GetMouseY() > 140
 				& InputManager.GetMouseY() < 160) {
 			playSound("dddd.wav");
